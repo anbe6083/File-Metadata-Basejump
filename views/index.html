@@ -1,0 +1,56 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Metadata Basejump Project</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        File Metadata Basejump Project
+      </h1>
+      <h2>
+        By Andrew Berumen
+      </h2>
+    </header>
+
+    <main>
+      <h3>
+        User stories
+      </h3>
+      <ul>
+        <li>User Story: I can submit a FormData object that includes a file upload.</li>
+        <li>User Story: When I submit something, I will receive the file size in bytes within the JSON response</li>
+      </ul>
+      <form id="myForm" method="POST" enctype="multipart/form-data" action="/submitted"> 
+        <input type="file" id="myFile" name="myImage">
+        <input type="submit" id="submit" name="submit">
+      </form>
+    </main>
+
+    <footer>
+      
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
